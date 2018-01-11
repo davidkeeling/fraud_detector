@@ -1,0 +1,15 @@
+
+body.wait, body.wait * {
+  cursor: wait !important;
+}
+
+.tab_content table {
+  border-collapse: separate;
+  border-spacing: 1em 2em;
+}
+
+.tab_content table td div {
+  max-width: 600px;
+  max-height: 200px;
+  overflow-y: auto;
+}
