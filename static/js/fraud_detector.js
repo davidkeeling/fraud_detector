@@ -6,13 +6,12 @@ function new_prediction(event) {
   $('body').addClass('wait');
   var parent_el = $('#output');
   parent_el.html('');
-  
+
   $.ajax({
     url: '/score',
     method: 'POST',
     dataType: 'json',
     success: function (data) {
-      console.log(data);
       $('body').removeClass('wait');
       render_dashboard_table([data], parent_el);
     },
@@ -58,6 +57,7 @@ $(document).ready(function () {
   $('#score').on('submit', new_prediction);
 
   $('#home_btn').on('click', show_tab('home_content'));
+  $('#slides_btn').on('click', show_tab('slides_content'));
   $('#score_btn').on('click', show_tab('score_content'));
 
   $('#dashboard_btn').on('click', function (event) {

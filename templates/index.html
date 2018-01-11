@@ -56,6 +56,9 @@
           <li class="nav-item nav_tab_btn active" id="home_btn">
             <a href="#">Home</a>
           </li>
+          <li class="nav-item nav_tab_btn" id="slides_btn">
+            <a href="#">Slides</a>
+          </li>
           <li class="nav-item nav_tab_btn" id="score_btn">
             <a href="#">Predict</a>
           </li>
@@ -69,7 +72,12 @@
         <p>This web app predicts fraud on the user-created content from an event website.</p>
       </div>
 
+      <div id="slides_content" class="tab_content hidden">
+        <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vToTVNjEOm7nVPUUvT4eaV7qYhr8halpI6f6p2atlDn3B2KI-76eXXz4X_ui-Bm8HqzIywNEpQJe8Jo/embed?start=false&loop=false&delayms=5000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+      </div>
+
       <div id="score_content" class="tab_content hidden">
+        <p>Fetch a new data point from the streaming service and predict whether it is fraudulent</p>
         <form id="score" method="POST" action="/score">
           <button type="submit">Predict</button>
         </form>
