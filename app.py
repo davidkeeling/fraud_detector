@@ -40,5 +40,5 @@ if __name__ == '__main__':
     mongo_client = MongoClient()
     db = mongo_client.mydb2
     coll = db.fraud_predictions
-    # app.run(host='0.0.0.0', port=8105, threaded=True)
-    app.run(host='0.0.0.0', port=8080, debug=True)
+    app.run(host='0.0.0.0', port=80, threaded=True)
+    # app.run(host='0.0.0.0', port=8080, debug=True)
